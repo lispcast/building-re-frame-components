@@ -1,0 +1,41 @@
+(ns building-re-frame-components.core
+  (:require building-re-frame-components.collapsible-panel.student
+            building-re-frame-components.collapsible-panel.teacher
+            building-re-frame-components.sortable-table.student
+            building-re-frame-components.sortable-table.teacher
+            building-re-frame-components.inline-editable-field.student
+            building-re-frame-components.inline-editable-field.teacher
+            building-re-frame-components.progress-bar.student
+            building-re-frame-components.progress-bar.teacher
+            building-re-frame-components.password-box.student
+            building-re-frame-components.password-box.teacher
+            building-re-frame-components.sortable-table-in-the-database.student
+            building-re-frame-components.sortable-table-in-the-database.teacher
+            building-re-frame-components.tag-editor.student
+            building-re-frame-components.tag-editor.teacher
+            building-re-frame-components.markdown-preview.student
+            building-re-frame-components.markdown-preview.teacher
+            building-re-frame-components.externally-managed-components.student
+            building-re-frame-components.externally-managed-components.teacher
+            building-re-frame-components.accordion-component.student
+            building-re-frame-components.accordion-component.teacher
+            building-re-frame-components.draggable-list.student
+            building-re-frame-components.draggable-list.teacher
+            building-re-frame-components.expanding-table.student
+            building-re-frame-components.expanding-table.teacher
+            building-re-frame-components.filterable-list.student
+            building-re-frame-components.filterable-list.teacher
+            building-re-frame-components.username-box.student
+            building-re-frame-components.username-box.teacher
+            building-re-frame-components.username-and-password-refactoring.student
+            building-re-frame-components.username-and-password-refactoring.teacher
+            building-re-frame-components.user-password-further-refactoring.student
+            building-re-frame-components.user-password-further-refactoring.teacher
+            building-re-frame-components.user-registration-1.student
+            building-re-frame-components.user-registration-1.teacher
+            building-re-frame-components.user-registration-2.student
+            building-re-frame-components.user-registration-2.teacher
+            building-re-frame-components.user-registration-3.student
+            building-re-frame-components.user-registration-3.teacher))
+
+(enable-console-print!)

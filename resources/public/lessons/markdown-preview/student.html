@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/tron-ui.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/codemirror.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+    <header class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="row">
+          <h1 class="col-md-12">
+            <a href="/index.html">
+              Building Re-frame Components
+            </a>
+          </h1>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+
+      
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Markdown Editor with Live Preview</h2>
+          <p>
+            See <a href="https://purelyfunctional.tv/lesson/markdown-preview/">this lesson online</a>.
+          </p>
+        </div>
+      </div>
+
+      
+      <div class="row">
+        <div class="col-md-12">
+          <p>
+            Edit the code in the file <code>src/building_re_frame_components/markdown_preview/student.cljs</code> to
+            edit this component.
+          </p>
+          <div id="markdown-preview--student">
+            Loading code <i class="fa fa-spinner fa-spin"></i>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/tron-ui.js"></script>
+    <script src="/js/showdown.min.js"></script>
+    <script src="/js/codemirror.js"></script>
+
+    <script src="/js/compiled/building_re_frame_components.js" type="text/javascript"></script>
+    <script>
+     jQuery(function() {
+       jQuery('a[data-toggle="tab"]').click(function(e) {
+         e.preventDefault();
+         console.log(e);
+         jQuery(this).tab('show');
+         console.log(jQuery(this));
+       });
+     });
+
+    </script>
+  </body>
+</html>
