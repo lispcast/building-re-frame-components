@@ -1,6 +1,6 @@
 (defproject building-re-frame-components "0.1.0-SNAPSHOT"
-  :description "FIXME: write this!"
-  :url "http://example.com/FIXME"
+  :description "Code to accompany Building Re-frame Components, a course on PurelyFunctional.tv"
+  :url "https://purelyfunctional.tv/courses/building-re-frame-components/"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
