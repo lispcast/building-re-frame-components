@@ -24,7 +24,7 @@ Now run Figwheel
 $CMD lein figwheel
 ```
 
-Open your browser to: http://0.0.0.0:3449
+Open your browser to: http://127.0.0.1:3449
 
 Start editing the code in `src/`.
 
