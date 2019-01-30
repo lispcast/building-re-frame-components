@@ -1,19 +1,19 @@
 (defproject building-re-frame-components "0.1.0-SNAPSHOT"
   :description "Code to accompany Building Re-frame Components, a course on PurelyFunctional.tv"
   :url "https://purelyfunctional.tv/courses/building-re-frame-components/"
-  :license {:name "Eclipse Public License"
-            :url "http://www.eclipse.org/legal/epl-v10.html"}
+  :license {:name "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication"
+            :url "http://creativecommons.org/publicdomain/zero/1.0/"}
 
   :min-lein-version "2.7.1"
 
   :dependencies [[day8.re-frame/http-fx "0.1.4"]
                  [re-frame "0.9.4"]
-                 [org.clojure/clojure "1.8.0"]
-                 [org.clojure/clojurescript "1.9.229"]
+                 [org.clojure/clojure "1.10.0"]
+                 [org.clojure/clojurescript "1.10.439"]
                  [org.clojure/core.async  "0.3.442"
                   :exclusions [org.clojure/tools.reader]]]
 
-  :plugins [[lein-figwheel "0.5.10"]
+  :plugins [[lein-figwheel "0.5.18"]
             [lein-cljsbuild "1.1.5" :exclusions [[org.clojure/clojure]]]]
 
   :source-paths ["src"]
@@ -96,7 +96,7 @@
   :profiles {:dev {:dependencies [[day8.re-frame/http-fx "0.1.4"]
                  [re-frame "0.9.4"]
                  [binaryage/devtools "0.9.2"]
-                                  [figwheel-sidecar "0.5.10"]
+                                  [figwheel-sidecar "0.5.18"]
                                   [com.cemerick/piggieback "0.2.1"]]
                    ;; need to add dev source path here to get user.clj loaded
                    :source-paths ["src" "dev"]
