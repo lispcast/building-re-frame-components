@@ -3,7 +3,7 @@
             [reagent.dom :as dom]
             [re-frame.core :as rf]))
 
-(def username-uri "https://whispering-cove-34851.herokuapp.com/users")
+(def username-uri "/users")
 
 (rf/reg-event-db
  :initialize

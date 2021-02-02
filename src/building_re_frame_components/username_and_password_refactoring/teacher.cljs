@@ -30,7 +30,7 @@
 (rf/reg-event-fx
  :teacher/check-username
  (fn [ctx [_ username]]
-   {:http-xhrio {:uri "https://whispering-cove-34851.herokuapp.com/users"
+   {:http-xhrio {:uri "/users"
                  :params {:u username}
                  :method :get
                  :timeout 10000

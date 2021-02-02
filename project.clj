@@ -12,7 +12,8 @@
                  [org.clojure/clojurescript "1.10.764"]
                  [org.clojure/core.async  "1.3.610"
                   :exclusions [org.clojure/tools.reader]]
-                 [com.bhauman/figwheel-main "0.2.12"]]
+                 [com.bhauman/figwheel-main "0.2.12"]
+                 [compojure "1.6.2"]]
 
   :source-paths ["src"]
 

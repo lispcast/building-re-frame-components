@@ -1,3 +1,4 @@
 {:watch-dirs ["src"]
  :css-dirs ["resources/public/css"]
- :ring-server-options {:port 3449}}
+ :ring-server-options {:port 3449}
+ :ring-handler building-re-frame-components.core/app}
