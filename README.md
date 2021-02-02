@@ -9,7 +9,7 @@ The repo contains all of the code you need to live-edit the components in the co
 Clone this repo
 
 ```bash
-$CMD git clone git@github.com:lispcast/building-re-frame-components.git
+$CMD git clone https://github.com/lispcast/building-re-frame-components.git
 ```
 
 Enter into the directory
