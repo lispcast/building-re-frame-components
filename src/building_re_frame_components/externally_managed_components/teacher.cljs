@@ -19,7 +19,7 @@
      {:reagent-render (fn [] [:div])
       :component-did-mount
       (fn [this]
-        (let [editor (create-codemirror (reagent/dom-node this)
+        (let [editor (create-codemirror (dom/dom-node this)
                                         (assoc options
                                                :value initial-value))]
           (when on-blur

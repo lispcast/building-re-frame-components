@@ -21,10 +21,10 @@ $CMD cd building-re-frame-components
 Now run Figwheel
 
 ```bash
-$CMD lein figwheel
+$CMD lein fig-dev
 ```
 
-Open your browser to: http://127.0.0.1:3449
+Open your browser to: http://localhost:3449
 
 Start editing the code in `src/`.
 

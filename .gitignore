@@ -13,3 +13,5 @@ pom.xml
 .nrepl-port
 .lsp/
 .clj-kondo/
+.DS_store
+.calva/

@@ -1,0 +1,6 @@
+{:main building-re-frame-components.core
+ :output-to "resources/public/js/compiled/building_re_frame_components.js"
+ :output-dir "resources/public/js/compiled/out"
+ :asset-path "/js/compiled/out"
+ :source-map-timestamp true
+ :infer-externs true}
