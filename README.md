@@ -32,6 +32,8 @@ I like to have my editor open alongside my browser so I can see changes as they 
 
 ## License
 
+Star Wars vehicle and character images are from the [Star Wars Databank](https://www.starwars.com/databank). A cache of those images is provided here for those who wish to work on this course offline. These images are copyrighted by Lucasfilm Ltd and are used here for educational purposes.
+
 [![CC0](http://i.creativecommons.org/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
 
 To the extent possible under law, the person who associated CC0 with
