@@ -76,6 +76,23 @@
         :pass
         :fail))]])
 
+(defn combine-statuses [statusa statusb]
+  (cond
+    (= :fail statusa)
+    :fail
+
+    (= :fail statusb)
+    :fail
+
+    (= :loading statusa)
+    :loading
+
+    (= :loading statusb)
+    :loading
+
+    :else
+    :pass))
+
 (defn labeled-box [{:keys [label state type extra on-change
                            validations validation-args]
                     :or {on-change (fn [])}}]
@@ -136,22 +153,7 @@
         :free
         :pass))]])
 
-(defn combine-statuses [statusa statusb]
-  (cond
-    (= :fail statusa)
-    :fail
 
-    (= :fail statusb)
-    :fail
-
-    (= :loading statusa)
-    :loading
-
-    (= :loading statusb)
-    :loading
-
-    :else
-    :pass))
 
 (defn password-box []
   (let [s (reagent/atom {})]

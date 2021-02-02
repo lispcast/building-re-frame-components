@@ -82,6 +82,29 @@
     :fail "red"
     :loading nil))
 
+(defn combine-statuses [statusa statusb]
+  (cond
+    (= :fail statusa)
+    :fail
+
+    (= :fail statusb)
+    :fail
+
+    (= :loading statusa)
+    :loading
+
+    (= :loading statusb)
+    :loading
+
+    :else
+    :pass))
+
+(defn status->icon [status]
+  (case status
+    :pass    [:span [:i.fa.fa-check]           " "]
+    :fail    [:span [:i.fa.fa-remove]          " "]
+    :loading [:span [:i.fa.fa-spinner.fa-spin] " "]))
+
 (defn validate [validations value args]
   (let [v (for [[desc f] validations]
             [desc (apply f value args)])
@@ -101,12 +124,6 @@
   (doall
    (for [[desc status] validations]
      (status-line desc status show-status?))))
-
-(defn status->icon [status]
-  (case status
-    :pass    [:span [:i.fa.fa-check]           " "]
-    :fail    [:span [:i.fa.fa-remove]          " "]
-    :loading [:span [:i.fa.fa-spinner.fa-spin] " "]))
 
 (defn labeled-box [{:keys [label state type extra on-change
                            validations validation-args
@@ -157,23 +174,6 @@
         :fail
         :free
         :pass))]])
-
-(defn combine-statuses [statusa statusb]
-  (cond
-    (= :fail statusa)
-    :fail
-
-    (= :fail statusb)
-    :fail
-
-    (= :loading statusa)
-    :loading
-
-    (= :loading statusb)
-    :loading
-
-    :else
-    :pass))
 
 (defn password-box [s]
   (labeled-box {:label "Password"
