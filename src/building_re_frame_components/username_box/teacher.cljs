@@ -1,5 +1,6 @@
 (ns building-re-frame-components.username-box.teacher
   (:require [reagent.core :as reagent]
+            [reagent.dom :as dom]
             [re-frame.core :as rf]
             [day8.re-frame.http-fx]
             [ajax.core :as ajax]))
@@ -137,4 +138,4 @@
 
 (when-some [el (js/document.getElementById "username-box--teacher")]
   (defonce _init (rf/dispatch-sync [:teacher/initialize]))
-  (reagent/render [ui] el))
+  (dom/render [ui] el))

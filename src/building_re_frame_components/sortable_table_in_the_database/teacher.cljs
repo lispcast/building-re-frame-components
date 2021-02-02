@@ -1,5 +1,6 @@
 (ns building-re-frame-components.sortable-table-in-the-database.teacher
   (:require [reagent.core :as reagent]
+            [reagent.dom :as dom]
             [re-frame.core :as rf]))
 
 (def data
@@ -98,4 +99,4 @@
 
 (when-some [el (js/document.getElementById "sortable-table-in-the-database--teacher")]
   (defonce _init (rf/dispatch-sync [:teacher/initialize]))
-  (reagent/render [ui] el))
+  (dom/render [ui] el))

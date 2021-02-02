@@ -1,5 +1,6 @@
 (ns building-re-frame-components.accordion-component.student
   (:require [reagent.core :as reagent]
+            [reagent.dom :as dom]
             [re-frame.core :as rf]))
 
 (rf/reg-event-db
@@ -19,4 +20,4 @@
 
 (when-some [el (js/document.getElementById "accordion-component--student")]
   (defonce _init (rf/dispatch-sync [:initialize]))
-  (reagent/render [ui] el))
+  (dom/render [ui] el))
