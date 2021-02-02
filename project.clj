@@ -6,15 +6,15 @@
 
   :min-lein-version "2.7.1"
 
-  :dependencies [[day8.re-frame/http-fx "0.1.4"]
-                 [re-frame "0.9.4"]
-                 [org.clojure/clojure "1.10.0"]
-                 [org.clojure/clojurescript "1.10.439"]
-                 [org.clojure/core.async  "0.3.442"
+  :dependencies [[day8.re-frame/http-fx "0.2.2"]
+                 [re-frame "1.1.2"]
+                 [org.clojure/clojure "1.10.2"]
+                 [org.clojure/clojurescript "1.10.764"]
+                 [org.clojure/core.async  "1.3.610"
                   :exclusions [org.clojure/tools.reader]]]
 
-  :plugins [[lein-figwheel "0.5.18"]
-            [lein-cljsbuild "1.1.5" :exclusions [[org.clojure/clojure]]]]
+  :plugins [[lein-figwheel "0.5.20"]
+            [lein-cljsbuild "1.1.8" :exclusions [[org.clojure/clojure]]]]
 
   :source-paths ["src"]
 
